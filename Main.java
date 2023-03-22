@@ -137,6 +137,51 @@ public class Main {
         }
     }
 
+    public static boolean operatingSystemCheck(String fileName) {
+        // search for invalid file characters in Windows & Linux (https://docs.oracle.com/javase/tutorial/essential/environment/sysprop.html)
+        String operatingSystem = System.getProperty("os.name").toUpperCase();
+
+        // check if the file is valid or not via characters inputted
+
+        // Windows (https://learn.microsoft.com/en-us/windows/win32/fileio/naming-a-file#file-and-directory-names)
+        if (operatingSystem.contains("WINDOWS")) {
+
+            // search for file equaling reserved names for the name of a file
+            String[] invalidEqualCharacters = {"CON", "PRN", "AUX", "NUL", "COM0", "COM1", "COM2", "COM3", "COM4", "COM5", "COM6", "COM7", "COM8", "COM9", "LPT0", "LPT1", "LPT2", "LPT3", "LPT4", "LPT5", "LPT6", "LPT7", "LPT8", "LPT9"};
+            for (int i = 0; i <= invalidEqualCharacters.length - 1; i++) {
+                if (fileName.equalsIgnoreCase(invalidEqualCharacters[i].concat(".deck"))) {
+                    System.err.println("Error: File name contains one of the reserved names in Windows! (" + invalidEqualCharacters[i] + " found!)");
+                    return false;
+                }
+            }
+            // search for file containing certain characters
+            String[] invalidContainCharacters = {"<", ">", ":", "\"", "/", "\\", "|", "?", "*"};
+            for (int i = 0; i <= invalidContainCharacters.length - 1; i++) {
+                if (fileName.contains(invalidContainCharacters[i])) {
+                    System.err.println("Error: File name contains an invalid character in Windows! (" + invalidContainCharacters[i] + " found!)");
+                    return false;
+                }
+            }
+        }
+
+        // Unix / Linux (https://dwheeler.com/essays/fixing-unix-linux-filenames.html - "The admin must not include 0x00 and 0x2F (“/”) and would usually would not include 0x2E (“.”)")
+        else if (operatingSystem.contains("UNIX") || operatingSystem.contains("LINUX")) {
+            if (fileName.contains("\000") || fileName.contains("/")) {
+                System.err.println("Error: File name contains an invalid character in Unix or Linux!");
+                return false;
+            }
+        }
+
+        // Mac (https://en.wikipedia.org/wiki/Filename - macOS HFS+ mentions ":" and "/")
+        else if (operatingSystem.contains("MAC")) {
+            if (fileName.contains("/") || fileName.contains(":")) {
+                System.err.println("Error: File name contains an invalid character in Mac!");
+                return false;
+            }
+        }
+        return true;
+    }
+
     // create new deck
     public static void createDeck() {
         // create directory if there is no decks directory
@@ -184,48 +229,9 @@ public class Main {
                     validFilePossTrue = false;
                 }
 
-                // search for invalid file characters in Windows & Linux (https://docs.oracle.com/javase/tutorial/essential/environment/sysprop.html)
-                String operatingSystem = System.getProperty("os.name").toUpperCase();
-
-                // check if the file is valid or not via characters inputted
-
-                // Windows (https://learn.microsoft.com/en-us/windows/win32/fileio/naming-a-file#file-and-directory-names)
-                if (operatingSystem.contains("WINDOWS")) {
-
-                    // search for file equaling reserved names for the name of a file
-                    String[] invalidEqualCharacters = {"CON", "PRN", "AUX", "NUL", "COM0", "COM1", "COM2", "COM3", "COM4", "COM5", "COM6", "COM7", "COM8", "COM9", "LPT0", "LPT1", "LPT2", "LPT3", "LPT4", "LPT5", "LPT6", "LPT7", "LPT8", "LPT9"};
-                    for (int i = 0; i <= invalidEqualCharacters.length - 1; i++) {
-                        if (fileName.equalsIgnoreCase(invalidEqualCharacters[i].concat(".deck"))) {
-                            System.err.println("Error: File name contains one of the reserved names in Windows! (" + invalidEqualCharacters[i] + " found!)");
-                            validFilePossTrue = false;
-                            break;
-                        }
-                    }
-                    // search for file containing certain characters
-                    String[] invalidContainCharacters = {"<", ">", ":", "\"", "/", "\\", "|", "?", "*"};
-                    for (int i = 0; i <= invalidContainCharacters.length - 1; i++) {
-                        if (fileName.contains(invalidContainCharacters[i])) {
-                            System.err.println("Error: File name contains an invalid character in Windows! (" + invalidContainCharacters[i] + " found!)");
-                            validFilePossTrue = false;
-                            break;
-                        }
-                    }
-                }
-
-                // Unix / Linux (https://dwheeler.com/essays/fixing-unix-linux-filenames.html - "The admin must not include 0x00 and 0x2F (“/”) and would usually would not include 0x2E (“.”)")
-                else if (operatingSystem.contains("UNIX") || operatingSystem.contains("LINUX")) {
-                    if (fileName.contains("\000") || fileName.contains("/")) {
-                        System.err.println("Error: File name contains an invalid character in Unix or Linux!");
-                        validFilePossTrue = false;
-                    }
-                }
-
-                // Mac (https://en.wikipedia.org/wiki/Filename - macOS HFS+ mentions ":" and "/")
-                else if (operatingSystem.contains("MAC")) {
-                    if (fileName.contains("/") || fileName.contains(":")) {
-                        System.err.println("Error: File name contains an invalid character in Mac!");
-                        validFilePossTrue = false;
-                    }
+                // operating system check on fileName characters
+                if (operatingSystemCheck(fileName) == false) {
+                    validFilePossTrue = false;
                 }
 
                 // escape 1st while loop all tests come to true
