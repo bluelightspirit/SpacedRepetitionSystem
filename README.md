@@ -12,7 +12,7 @@ First, all of the 3 classes, [Main.java](https://github.com/bluelightspirit/Spac
 
 Then, to use the tool, the user first should start up the tool that uses the terminal.
 
-In [IntelliJ](https://www.jetbrains.com/idea/download/), the way to open the project is to press "Open", navigate to where the 3 classes of code are, then select that folder as shown below.
+In [IntelliJ](https://www.jetbrains.com/idea/download/), the way to open the project is to press "Open", navigate to where the 3 classes of code are, then select that folder as shown below & press "OK" at the bottom.
 
 ![image](https://user-images.githubusercontent.com/22280271/227029080-b385c84f-2943-41b9-ad91-b03c60c5c8cb.png)
 
