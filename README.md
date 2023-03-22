@@ -2,7 +2,7 @@
 
 ## A Java flash card tool that uses the terminal where the user can study & learn by creating their own questions & cards, then have the program tell what cards they should study depending on the difficulty of the question, similar to the tool [Anki](https://apps.ankiweb.net/)
 
-## How does anyone use the tool?
+## How does anyone download & run the tool?
 
 Anyone should be aiming to see the tool that looks like this:
 
@@ -47,9 +47,69 @@ Finally, press "OK".
 
 ![image](https://user-images.githubusercontent.com/22280271/227027840-2c48b2b6-a3c1-4d3d-8645-d002bb428483.png)
 
-Then, within [BlueJ](https://www.bluej.org/) or [IntelliJ](https://www.jetbrains.com/idea/download/), the user can type "1", "2", "3", or "4" to study a deck of cards, add cards to a deck of cards, create a new deck of cards, or exit the tool!
+## How does anyone use the tool?
+
+Within [BlueJ](https://www.bluej.org/) or [IntelliJ](https://www.jetbrains.com/idea/download/), the user can type "1", "2", "3", or "4" to study a deck of cards, add cards to a deck of cards, create a new deck of cards, or exit the tool!
 
 ![image](https://user-images.githubusercontent.com/22280271/227028115-b3dc8f4d-fd65-4eec-9b25-d2adf4692f71.png)
+
+Typing "3" then [ENTER] in should ask the user to create a new deck of cards, like this:
+
+![image](https://user-images.githubusercontent.com/22280271/227036298-969c6a5f-7cde-418b-98e4-12a0f50f4b5f.png)
+
+Then, the user could type in the deck name they desire to use (duplicates & certain characters depending on the operating system used are not allowed)
+
+![image](https://user-images.githubusercontent.com/22280271/227036394-4139961d-b480-4012-9a9c-bc55a4c30ca4.png)
+
+Typing "2" then [ENTER] in should ask the user to add cards to a deck of cards, like this:
+
+![image](https://user-images.githubusercontent.com/22280271/227036560-8dc02e20-c735-4207-a9b3-7fad3d391f5a.png)
+
+Then, the user can choose a deck to add cards to & set their question & answer, like this:
+
+![image](https://user-images.githubusercontent.com/22280271/227036706-2c8e4909-4e56-4bf5-9d02-b5e74978bbdb.png)
+
+The user then could either keep making questions & answers, or type in "stop" to go back to the options, like this:
+
+![image](https://user-images.githubusercontent.com/22280271/227036940-b58856d2-9292-4816-ba67-2a50dac33c45.png)
+
+Then, after they added cards to that deck, they could now study it!
+
+Typing "1" then [ENTER] in should ask the user to choose from one of the decks available, like this:
+
+![image](https://user-images.githubusercontent.com/22280271/227037179-9f40d4e5-bd65-4358-92ff-c3c5f7820a1f.png)
+
+Then, the user could choose a deck to study from then [ENTER], like this:
+
+![image](https://user-images.githubusercontent.com/22280271/227037295-63034cdf-098d-4ac3-897c-229d29b5143a.png)
+
+Then, the question will appear like so:
+
+![image](https://user-images.githubusercontent.com/22280271/227037348-28ceaa41-84d9-45b5-b628-d9f938e0a22b.png)
+
+It is optional to type in the answer in the box. Either way, pressing [ENTER] will lead to the answer being shown when ready, which should look like this:
+
+![image](https://user-images.githubusercontent.com/22280271/227037599-ce1d5c19-6764-45e3-81c3-00335d46da22.png)
+
+Then, the user can type in "w"/"wrong", "d"/"difficult", "c"/"correct", or "e"/"easy".
+
+Telling the program the user got the wrong answer by typing in "w" then [ENTER] should result in the question eventually coming back again. Since this deck has only 1 card, it instantly comes back to the card just answered to ask it again:
+
+![image](https://user-images.githubusercontent.com/22280271/227038153-71d1fb95-c6dc-4a1e-9e41-cac89acb5d95.png)
+
+[ENTER] should of course show the options for the user to choose from again in the difficulty of the question.
+
+![image](https://user-images.githubusercontent.com/22280271/227038500-c452f22e-7130-43e2-b93e-997a97034cc8.png)
+
+If the user inputted "d" then [ENTER] in, the date the question would be due would generally be earlier than inputting "c" or "e" then [ENTER] in since more difficult questions are meant to be repeated more often than easier ones due to the design of [Spaced Repetition](https://en.wikipedia.org/wiki/Spaced_repetition).
+
+## How to save?
+
+The program auto-saves the .deck files in the decks folder any time they create a new deck, stop giving questions & answers while adding cards to a deck, & whenever the user inputs the difficulty in the question they're studying in & entering that input. Pressing some "save" button over and over is not required. Re-running the program should keep all of the save data. 
+
+If the user want to make sure it saved or not, the user could check the decks folder the code is in, assuming you at least used the tool once before typing in 1-3 & entering.
+
+![image](https://user-images.githubusercontent.com/22280271/227039775-8cf4396c-a34c-43eb-b682-a728c955832b.png)
 
 ## How does the tool work?
 
