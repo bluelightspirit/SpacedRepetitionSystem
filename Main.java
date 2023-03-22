@@ -164,7 +164,7 @@ public class Main {
             }
         }
 
-        // Unix / Linux (https://dwheeler.com/essays/fixing-unix-linux-filenames.html - "The admin must not include 0x00 and 0x2F (“/”) and would usually would not include 0x2E (“.”)")
+        // Unix / Linux (https://dwheeler.com/essays/fixing-unix-linux-filenames.html - "The admin must not include 0x00 and 0x2F (“/") and would usually would not include 0x2E (“.")
         else if (operatingSystem.contains("UNIX") || operatingSystem.contains("LINUX")) {
             if (fileName.contains("\000") || fileName.contains("/")) {
                 System.err.println("Error: File name contains an invalid character in Unix or Linux!");

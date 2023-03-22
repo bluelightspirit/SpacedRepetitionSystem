@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Main
+comment1.params=
+comment1.target=java.util.ArrayList\ getDecks()
+comment2.params=
+comment2.target=Deck\ chooseDeck()
+comment3.params=
+comment3.target=boolean\ checkIfDeckFilesExists()
+comment4.params=
+comment4.target=void\ study()
+comment5.params=
+comment5.target=void\ addCards()
+comment6.params=
+comment6.target=void\ createDirectory()
+comment7.params=fileName
+comment7.target=boolean\ operatingSystemCheck(java.lang.String)
+comment8.params=
+comment8.target=void\ createDeck()
+comment9.params=args
+comment9.target=void\ main(java.lang.String[])
+numComments=10
