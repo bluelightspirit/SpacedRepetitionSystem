@@ -125,7 +125,7 @@ The program also allows the user to create new decks & add new cards to a deck. 
 
 1. How to search a directory for only ".deck" or any extension files 
 2. How to create a directory/folder
-3. How to create a file using Files specifically.
+3. How to create a file using Files specifically
 4. How to use Java's LocalDate API
 5. How to use Java's DirectoryStream API, as well as how to convert their stream ArrayList of Path's to Strings
 6. How to use Java's System.getProperty() within Java's System class to get the operating system the program is running on & to get the file location (reverted the get file location part this way since it wasn't necessary to use that to get the file location of the .class it is running from specifically)
