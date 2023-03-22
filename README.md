@@ -12,13 +12,19 @@ First, all of the 3 classes, [Main.java](https://github.com/bluelightspirit/Spac
 
 Then, to use the tool, the user first should start up the tool that uses the terminal.
 
+In [IntelliJ](https://www.jetbrains.com/idea/download/), the way to open the project is to press "Open", navigate to where the 3 classes of code are, then select that folder as shown below.
+
+![image](https://user-images.githubusercontent.com/22280271/227029080-b385c84f-2943-41b9-ad91-b03c60c5c8cb.png)
+
+Since this project was designed to also have compatibility with [BlueJ](https://www.bluej.org/), after the project is opened, open [Main.class](https://github.com/bluelightspirit/SpacedRepetitionSystem/blob/main/Main.class) within [IntelliJ](https://www.jetbrains.com/idea/download/).
+
 In [IntelliJ](https://www.jetbrains.com/idea/download/), the way to run is to press this button at the top right or Shift+F10 on Windows:
 
 ![image](https://user-images.githubusercontent.com/22280271/227017226-8b51f1bc-0123-493f-a1c0-1cb9baf73212.png)
 
-In [BlueJ](https://www.bluej.org/), the way to open the project first is to press Project -> Open Non BlueJ -> Select the folder the 3 classes downloaded are in -> Select Folder.
+In [BlueJ](https://www.bluej.org/), the way to open the project first is to press Project -> Open Project -> Select the folder the 3 classes downloaded are in -> Select Folder.
 
-![image](https://user-images.githubusercontent.com/22280271/227017856-4569b041-80ed-4597-a913-d4cfdd76e54f.png)
+![image](https://user-images.githubusercontent.com/22280271/227032260-e11af9b5-0851-4276-ab5c-67d10680a677.png)
 
 After doing that, it should look like this:
 
@@ -28,11 +34,7 @@ Then, to run the code in [BlueJ](https://www.bluej.org/), right click "Main" the
 
 ![image](https://user-images.githubusercontent.com/22280271/227018122-a3e15870-af89-46f0-a3a4-b674e1a7337c.png)
 
-Unfortunately, [BlueJ](https://www.bluej.org/) is slightly incompatible with the code compared to [IntelliJ](https://www.jetbrains.com/idea/download/). To fix this incompatibility, comment this section of code out by putting "//" before every line here below:
-
-![image](https://user-images.githubusercontent.com/22280271/227018865-1c964c5f-e90c-4fef-92b6-1f31993c546a.png)
-
-After that, press "Compile" again, then navigate back to this [BlueJ](https://www.bluej.org/) window, right click it, then press void main(String[] args).
+Navigate back to this [BlueJ](https://www.bluej.org/) window, right click the Main box, then press void main(String[] args).
 
 ![image](https://user-images.githubusercontent.com/22280271/227019186-ab9a6643-9816-48d2-979e-2aa9db26b26c.png)
 
@@ -43,7 +45,6 @@ Finally, press "OK".
 Then, within [BlueJ](https://www.bluej.org/) or [IntelliJ](https://www.jetbrains.com/idea/download/), the user can type "1", "2", "3", or "4" to study a deck of cards, add cards to a deck of cards, create a new deck of cards, or exit the tool!
 
 ![image](https://user-images.githubusercontent.com/22280271/227028115-b3dc8f4d-fd65-4eec-9b25-d2adf4692f71.png)
-
 
 ## How does the tool work?
 
