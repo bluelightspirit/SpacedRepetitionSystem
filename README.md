@@ -1,10 +1,10 @@
 # SpacedRepetitionSystem
 
-## A Java flash card tool that uses the terminal where the user can study & learn by creating their own questions & cards, then have the program tell what cards they should study depending on the difficulty of the question, similar to the game [Anki](https://apps.ankiweb.net/)
+## A Java flash card tool that uses the terminal where the user can study & learn by creating their own questions & cards, then have the program tell what cards they should study depending on the difficulty of the question, similar to the tool [Anki](https://apps.ankiweb.net/)
 
-## How does the game work?
+## How does the tool work?
 
-The game works as a flash-card program that allows users to study things they wish to memorize. It will represent a flash card containing a question, such as "Are bandits good?" and an answer, such as "No!"
+The tool works as a flash-card program that allows users to study things they wish to memorize. It will represent a flash card containing a question, such as "Are bandits good?" and an answer, such as "No!"
 
 The program does not ask the user to type the answer in, or check if they got it right. However, if the user desires, they could type in the answer before pressing [ENTER], which would indicate they are ready for the answer when they press [ENTER]. After that, it will show the user the answer & ask the user if they got it right or not.
 
