@@ -18,6 +18,8 @@ In [IntelliJ](https://www.jetbrains.com/idea/download/), the way to open the pro
 
 Since this project was designed to also have compatibility with [BlueJ](https://www.bluej.org/), after the project is opened, open [Main.class](https://github.com/bluelightspirit/SpacedRepetitionSystem/blob/main/Main.class) within [IntelliJ](https://www.jetbrains.com/idea/download/).
 
+![image](https://user-images.githubusercontent.com/22280271/227033853-949c1972-09e7-4317-8815-c596f48b60c9.png)
+
 In [IntelliJ](https://www.jetbrains.com/idea/download/), the way to run is to press this button at the top right or Shift+F10 on Windows:
 
 ![image](https://user-images.githubusercontent.com/22280271/227017226-8b51f1bc-0123-493f-a1c0-1cb9baf73212.png)
