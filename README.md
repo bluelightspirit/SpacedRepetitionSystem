@@ -107,7 +107,7 @@ If the user inputted "d" then [ENTER] in, the date the question would be due wou
 
 The program auto-saves the .deck files in the decks folder any time they create a new deck, stop giving questions & answers while adding cards to a deck, & whenever the user inputs the difficulty in the question they're studying in & entering that input. Pressing some "save" button over and over is not required. Re-running the program should keep all of the save data. 
 
-If the user want to make sure it saved or not, the user could check the decks folder the code is in, assuming you at least used the tool once before typing in 1-3 & entering.
+If the user want to make sure it saved or not, the user could check the decks folder the code is in, assuming the user at least used the tool once before typing in 1-3 & entering before.
 
 ![image](https://user-images.githubusercontent.com/22280271/227039775-8cf4396c-a34c-43eb-b682-a728c955832b.png)
 
