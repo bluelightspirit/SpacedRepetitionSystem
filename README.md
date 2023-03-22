@@ -22,8 +22,9 @@ In [IntelliJ](https://www.jetbrains.com/idea/download/), the way to run is to pr
 
 ![image](https://user-images.githubusercontent.com/22280271/227017226-8b51f1bc-0123-493f-a1c0-1cb9baf73212.png)
 
-In [BlueJ](https://www.bluej.org/), the way to open the project first is to press Project -> Open Project -> Select the folder the 3 classes downloaded are in -> Select Folder.
+In [BlueJ](https://www.bluej.org/), the way to open the project first is to press Project -> Open Project -> Select the folder the 3 classes downloaded are in -> Select Folder or to simply double click "package" within that folder.
 
+![image](https://user-images.githubusercontent.com/22280271/227033248-154d3a13-cfba-4d81-900b-a110a50dca82.png) 
 ![image](https://user-images.githubusercontent.com/22280271/227032260-e11af9b5-0851-4276-ab5c-67d10680a677.png)
 
 After doing that, it should look like this:
